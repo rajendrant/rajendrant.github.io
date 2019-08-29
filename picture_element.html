@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body onload='console.log("onload document")'>
+
+Scroll down to see the images
+<br>
+<div style="height:10000px;"></div>
+
+<br>
+Images below this line will get lazyloaded.
+<br>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img/img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img/img_white_flower.jpg">
+  <img src="img/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+<picture><source media="(min-width: 0)" srcset="img/IMG_1578.max-200x200.png">
+  <img src="img/Chrome__logo.max-200x200.png">
+</picture>
+
+<picture>
+  <source media="(min-width: 0)" srcset="img/lazyload_on.jpg">
+  <img src="img/images.jpeg" alt="images.jpeg" style="width:auto;" loading="lazy">
+</picture>
+
+<picture>
+  <source media="(min-width: 0)" srcset="img/lazyload_off.jpg">
+  <img src="img/monalisa.jpeg" alt="monalisa.jpeg" style="width:auto;" loading="eager">
+</picture>
+
+</body>
+</html>

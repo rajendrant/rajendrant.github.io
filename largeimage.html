@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body onload='console.log("onload document")'>
+<div>This page is used to test the behavior when large images are present.</div>
+<br>
+<button onclick="document.getElementById('first_image').scrollIntoView();">Scroll to first image</button>
+<div style="height:10000px;"></div>
+<img id="first_image" src="http://rajendrant.pythonanywhere.cimg/slow/large1.jpeg" onload='console.log("onload img1")'>
+<img src="http://rajendrant.pythonanywhere.cimg/slow/large1.jpeg?foo" onload='console.log("onload img1-foo")'>
+<img src="http://rajendrant.pythonanywhere.cimg/slow/large1.jpeg?bar" onload='console.log("onload img1-bar")'>
+<img src="http://rajendrant.pythonanywhere.cimg/slow/large1.jpeg?baz" onload='console.log("onload img1-baz")'>
+<img src="http://rajendrant.pythonanywhere.cimg/slow/large1.jpeg?qux" onload='console.log("onload img1-qux")'>
+<img src="http://rajendrant.pythonanywhere.cimg/slow/large1.jpeg?quux" onload='console.log("onload img1-quux")'>
+</body>
+</html>
